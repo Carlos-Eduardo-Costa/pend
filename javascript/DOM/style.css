@@ -1,0 +1,13 @@
+button{
+
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #19b5ff;
+    border: 5px solid #1a4052;
+    cursor:pointer
+}
+.destaque{
+    font-weight: bold;
+    color: red;
+}
