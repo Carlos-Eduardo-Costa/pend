@@ -1,13 +1,13 @@
-*{
-    background-color: yellow;
-
-}
 input{
     border: solid white;
     width: 200px;
     height: 30px;
     background-color: white;
     border-radius: 25px;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    padding: 0px 20px 0px 20px;
 
 }
 body{
@@ -16,4 +16,15 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: yellow;
+}
+div{
+    position: relative;
+}
+.icone{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 25%;
 }
