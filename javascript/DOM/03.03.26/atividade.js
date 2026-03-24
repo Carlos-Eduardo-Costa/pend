@@ -65,3 +65,33 @@ clique6.addEventListener("click", function () {
 elemento.addEventListener("click", function () {
     list.removeChild(elemento);
 })
+
+//exercicios de validação //
+let email = document.querySelector("#campo2");
+let senha = document.querySelector("#campo");
+let msg = document.querySelector("#msg");
+let validar = document.querySelector("#validar");
+
+validar.addEventListener("click", function() {
+    if(email.value.includes("@") && email.value.includes("\.")) {
+        msgEmail.innerHTML = "Email válido";
+        msgEmail.style.color = "green";
+    } else {
+        msgEmail.innerHTML = "Email inválido";
+        msgEmail.style.color = "red";
+    }
+});
+senha.addEventListener("keyup", function() {
+    if(senha.value.length < 6) {
+        msgSenha.innerHTML = "Senha inválida";
+        msgSenha.style.color = "red";
+    } 
+    if(senha.value.length >= 6 && senha.value.length <= 10) {
+        msgSenha.innerHTML = "Senha aceitável";
+        msgSenha.style.color = "orange";
+    }
+    if(senha.value.length > 10) {
+        msgSenha.innerHTML = "Senha forte";
+        msgSenha.style.color = "green";
+    }
+});
